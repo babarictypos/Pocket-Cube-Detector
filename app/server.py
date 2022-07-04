@@ -3,8 +3,8 @@ import asyncio
 import uvicorn
 from fastai import *
 from fastai.vision import *
-from fastai.vision import load_learner #for some reason fastai does NOT import this with the *, needs to be this or
-#from fastai.vision.all import *, I assume this is what the author was referring to when he said it only imports 'what is required efficiently'
+from fastai.learner import load_learner #for some reason fastai does NOT import this with the *, 
+#I assume this is what the author was referring to when he said it only imports 'what is required efficiently'
 from io import BytesIO
 from starlette.applications import Starlette
 from starlette.middleware.cors import CORSMiddleware
