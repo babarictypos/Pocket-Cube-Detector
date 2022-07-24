@@ -1,15 +1,6 @@
-# Starter for deploying [fast.ai](https://www.fast.ai) models on [Render](https://render.com)
+# This reposistory is for deploying fastai (v2) neural networks (pkl files) onto the cloud service Render. For Fastaiv1 deployment see link below.
 
-This repo can be used as a starting point to deploy [fast.ai](https://github.com/fastai/fastai) models on Render.
+Forked from https://github.com/render-examples/fastai-v3
 
-The sample app described here is up at https://fastai-v3.onrender.com. Test it out with bear images!
-
-You can test your changes locally by installing Docker and using the following command:
-
-```
-docker build -t fastai-v3 . && docker run --rm -it -p 5000:5000 fastai-v3
-```
-
-The guide for production deployment to Render is at https://course.fast.ai/deployment_render.html.
-
-Please use [Render's fast.ai forum thread](https://forums.fast.ai/t/deployment-platform-render/33953) for questions and support.
+CHANGES: The deployment in original was designed for fastaiv1 and neural nets trained in fastai (v2) would not deploy. Outdated functions for loading neural networks (pkl files) changed for new ones.
+Additionally loosened library version requirements to not conflict with fastai (v2)
